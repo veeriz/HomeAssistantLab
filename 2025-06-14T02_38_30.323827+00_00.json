@@ -1,0 +1,2553 @@
+{
+  "trace": {
+    "last_step": "action/1",
+    "run_id": "6c7b200d1473a372c146637b2c410429",
+    "state": "stopped",
+    "script_execution": "finished",
+    "timestamp": {
+      "start": "2025-06-14T02:38:30.323827+00:00",
+      "finish": "2025-06-14T02:38:32.110507+00:00"
+    },
+    "domain": "automation",
+    "item_id": "1749861275771",
+    "trigger": "time pattern",
+    "trace": {
+      "trigger/0": [
+        {
+          "path": "trigger/0",
+          "timestamp": "2025-06-14T02:38:30.323872+00:00",
+          "changed_variables": {
+            "current_timestamp": "2025-06-14 02:37:40",
+            "current_user": "veeriz",
+            "this": {
+              "entity_id": "automation.ha_datalogger22",
+              "state": "on",
+              "attributes": {
+                "id": "1749861275771",
+                "last_triggered": "2025-06-14T02:38:20.693264+00:00",
+                "mode": "queued",
+                "current": 0,
+                "max": 10,
+                "friendly_name": "HA-Datalogger2"
+              },
+              "last_changed": "2025-06-14T02:38:20.692899+00:00",
+              "last_reported": "2025-06-14T02:38:22.182429+00:00",
+              "last_updated": "2025-06-14T02:38:22.182429+00:00",
+              "context": {
+                "id": "01JXP4TS0NC1YJJACX2GB1TVRN",
+                "parent_id": null,
+                "user_id": null
+              }
+            },
+            "trigger": {
+              "id": "0",
+              "idx": "0",
+              "alias": null,
+              "platform": "time_pattern",
+              "now": "2025-06-14T04:38:30.323687+02:00",
+              "description": "time pattern"
+            }
+          }
+        }
+      ],
+      "action/0": [
+        {
+          "path": "action/0",
+          "timestamp": "2025-06-14T02:38:30.324196+00:00",
+          "changed_variables": {
+            "context": {
+              "id": "01JXP4V2DK4J4C83TXJ8AB2HC3",
+              "parent_id": null,
+              "user_id": null
+            }
+          }
+        }
+      ],
+      "action/0/repeat/sequence/0": [
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.042993+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 494,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.livingroomlightonwhenentering",
+                "last_changed": "2025-06-14 02:26:57.637155+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.livingroomlightonwhenentering",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.637155+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.046156+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 495,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.turn_on_car_charger_at_night_cheapest_hrs",
+                "last_changed": "2025-06-14 02:26:57.637212+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.turn_on_car_charger_at_night_cheapest_hrs",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.637212+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.049829+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 496,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.preheat_car_in_winter",
+                "last_changed": "2025-06-14 02:26:57.637282+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.preheat_car_in_winter",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.637282+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.053422+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 497,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.imoufrontmotion",
+                "last_changed": "2025-06-14 02:26:57.637379+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.imoufrontmotion",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.637379+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.057500+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 498,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.frigate_notify_besok",
+                "last_changed": "2025-06-14 02:26:57.637457+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.frigate_notify_besok",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.637457+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.064266+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 499,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.test_ha_voice_pe_turn_on_master_bedroom_lamp",
+                "last_changed": "2025-06-14 02:26:57.637532+00:00",
+                "state": "off"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.test_ha_voice_pe_turn_on_master_bedroom_lamp",
+                "state": "off",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.637532+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.068375+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 500,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.livspotifymodeon",
+                "last_changed": "2025-06-14 02:26:57.637893+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.livspotifymodeon",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.637893+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.072220+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 501,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.livspotifymodeoff",
+                "last_changed": "2025-06-14 02:26:57.637995+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.livspotifymodeoff",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.637995+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.075887+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 502,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.assistlivinromlang",
+                "last_changed": "2025-06-14 02:26:57.638075+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.assistlivinromlang",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.638075+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.079108+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 503,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.assistlivinenglan",
+                "last_changed": "2025-06-14 02:26:57.638197+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.assistlivinenglan",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.638197+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.082211+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 504,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.update_livingroom_lights_group",
+                "last_changed": "2025-06-14 02:26:57.638273+00:00",
+                "state": "off"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.update_livingroom_lights_group",
+                "state": "off",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.638273+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.084733+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 505,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.livspotifymodeon_2",
+                "last_changed": "2025-06-14 02:26:57.638446+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.livspotifymodeon_2",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.638446+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.087170+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 506,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.livyoutubemodeoff",
+                "last_changed": "2025-06-14 02:26:57.638510+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.livyoutubemodeoff",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.638510+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.089154+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 507,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.frigatenotifyparking2",
+                "last_changed": "2025-06-14 02:26:57.638560+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.frigatenotifyparking2",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.638560+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.091043+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 508,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.ib_camera_notify_on",
+                "last_changed": "2025-06-14 02:26:57.638599+00:00",
+                "state": "off"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.ib_camera_notify_on",
+                "state": "off",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.638599+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.092946+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 509,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.turn_on_occupancy_helper_when_occupancy_detected",
+                "last_changed": "2025-06-14 02:26:57.638642+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.turn_on_occupancy_helper_when_occupancy_detected",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.638642+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.094870+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 510,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.turn_off_occupancy_helper_after_no_occupancy_for_10_minutes",
+                "last_changed": "2025-06-14 02:26:57.638685+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.turn_off_occupancy_helper_after_no_occupancy_for_10_minutes",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.638685+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.097043+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 511,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.turnoffcameranotificationswhenleavinghouse",
+                "last_changed": "2025-06-14 02:26:57.638726+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.turnoffcameranotificationswhenleavinghouse",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:26:57.638726+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.099213+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 512,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.ha_datalogger22",
+                "last_changed": "2025-06-14 02:38:20.692899+00:00",
+                "state": "on"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.ha_datalogger22",
+                "state": "on",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:38:20.692899+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:38:32.101549+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 513,
+              "last": true,
+              "item": {
+                "attributes": [],
+                "entity_id": "automation.create_all_livingroom_lights_group",
+                "last_changed": "2025-06-14 02:27:16.496612+00:00",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "automation.create_all_livingroom_lights_group",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 02:37:40",
+                "last_change": "2025-06-14 02:27:16.496612+00:00",
+                "logged_by": "veeriz"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        }
+      ],
+      "action/1": [
+        {
+          "path": "action/1",
+          "timestamp": "2025-06-14T02:38:32.107472+00:00",
+          "result": {
+            "params": {
+              "domain": "input_text",
+              "service": "set_value",
+              "service_data": {
+                "value": {
+                  "light.all_livingroom_lights": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.wpguestroom": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.outerhallwaywindowlamps": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.garageleds": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.garageleds_2": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.kristinbedlamp": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.bedsidelamp": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.masterbedroomlamp": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.mtr1_369c_hallway_rgb_light": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.apollo_mtr_1_f58660_rgb_light": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.apollo_mtr_1_f59b2c_rgb_light": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.mtr1_9c60_masterbedroom_rgb_light": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.ha_voice_assist_livin_led_ring": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.ha_voice_assist_office_led_ring": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.wled_2": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.tradgard_pool_floodlight_timed": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.garagec500_floodlight_timed": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.kitchentablelamp": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.livingroomcozylamp": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.livingroomreadinglamp": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.officerooflamp1": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.officerooflamp2": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.armchairreadinglight": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.hallwaybureulamp": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.kitchenwindowlamp": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.ledsbehindcouch": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.masterbedroomlight": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.kitchenwindowtemp": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.greaterhallwayrooflamp": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.homeofficewardrobeleds": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.wiz_tunable_white_495dfa": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "light.m9livingroom_screen": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.frontdoorbell_flip": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.frontdoorbell_time_watermark": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.dreame_vacuum_pre_release": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wake_on_lan": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.mtr1_369c_hallway_ld2450_bluetooth": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.mtr1_369c_hallway_multi_target_tracking": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.apollo_mtr_1_f58660_ld2450_bluetooth": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.apollo_mtr_1_f58660_multi_target_tracking": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.apollo_mtr_1_f59b2c_ld2450_bluetooth": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.apollo_mtr_1_f59b2c_multi_target_tracking": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.mtr1_9c60_masterbedroom_ld2450_bluetooth": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.mtr1_9c60_masterbedroom_multi_target_tracking": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.ha_voice_assist_livin_mute": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.ha_voice_assist_livin_wake_sound": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.ha_voice_assist_office_mute": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.ha_voice_assist_office_wake_sound": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wled_nightlight_2": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wled_sync_send_2": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wled_sync_receive_2": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wled_reverse_2": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.cdentre_motiondetect": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.cdentre_breathinglight": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.cdentre_whitelight": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.cdentre_linkdevalarm": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.imou_cruiser_ptz_detect": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.imou_cruiser_ptz_motion": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.imou_cruiser_ptz_recordings": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.imou_cruiser_ptz_snapshots": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.imou_cruiser_fixed_detect": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.imou_cruiser_fixed_motion": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.imou_cruiser_fixed_recordings": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.imou_cruiser_fixed_snapshots": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgardpool_detect": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgardpool_motion": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgardpool_recordings": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgardpool_snapshots": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.uterum_detect": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.uterum_motion": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.uterum_recordings": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.uterum_snapshots": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.entre_detect": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.entre_motion": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.entre_recordings": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.entre_snapshots": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garage_detect": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garage_motion": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garage_recordings": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garage_snapshots": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_privacy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_trigger_alarm_on_people_detection": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_trigger_alarm_on_motion_detection": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_trigger_alarm_on_tamper_detection": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_media_sync": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_lens_distortion_correction": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_indicator_led": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_flip": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_auto_track": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_notifications": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_rich_notifications": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_automatically_upgrade_firmware": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_record_to_sd_card": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_microphone_mute": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.tradgard_pool_microphone_noise_cancellation": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_privacy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_trigger_alarm_on_people_detection": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_trigger_alarm_on_motion_detection": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_trigger_alarm_on_tamper_detection": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_media_sync": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_lens_distortion_correction": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_indicator_led": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_flip": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_auto_track": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_notifications": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_rich_notifications": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_automatically_upgrade_firmware": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_record_to_sd_card": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_microphone_mute": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garagec500_microphone_noise_cancellation": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.uterum_media_sync": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wp1": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wp1_child_lock": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wp2": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wp2_child_lock": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wp3": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wp3_child_lock": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.outerhallwaywindowlamps": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wpgarage": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wpgarage_child_lock": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wpguestroom": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.wpguestroom_child_lock": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.zigbee2mqtt_bridge_permit_join": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.garageleds": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.maindoorlock_auto_relock": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.frontdoorlock_auto_relock": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.kristinbedlamp": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.kristinbedlamp_child_lock": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.badrum_crossfade": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.badrum_loudness": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_resume_cleaning": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_carpet_boost": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_obstacle_avoidance": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_customized_cleaning": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_child_lock": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_dnd": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_multi_floor_map": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_auto_dust_collecting": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_carpet_recognition": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_self_clean": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_water_electrolysis": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_intelligent_recognition": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_auto_drying": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_carpet_avoidance": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_auto_add_detergent": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_cleaning_sequence": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_self_clean_by_zone": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_collision_avoidance": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.sasha_stain_avoidance": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.jarvislivingroom_mute": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.bwd32y_engine": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "switch.bwd32y_heater": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.remote_ui": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.dark_outside": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.ipad_focus": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.sm_g996b_android_auto": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.sm_s936b_android_auto": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.radarr_health": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_service_warning": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_washer_fluid_level_warning": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_brake_fluid_level_warning": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_door_front_left": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_door_front_right": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_door_rear_left": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_door_rear_right": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_hood": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_tailgate": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_coolant_level_warning": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_engine_status": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_oil_level_warning": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_tyre_front_left": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_tyre_front_right": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_tyre_rear_left": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_tyre_rear_right": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_window_front_left": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_window_front_right": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_window_rear_left": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.volvo_v60_window_rear_right": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.freebsd_router_wan_status": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.mtr1_369c_hallway_online": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.apollo_mtr_1_f58660_online": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.apollo_mtr_1_f59b2c_online": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.mtr1_9c60_masterbedroom_online": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.workday_sensor": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.day_after_tomorrow_workday_sensor": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.tomorrow_workday_sensor": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.entre_person_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garage_motorcycle_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.entre_all_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.zone_enteringgaragedriveway_motorcycle_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.tradgardpool_all_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.tradgardpool_person_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.zone_enteringgaragedriveway_car_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.zone_enteringgaragedriveway_bicycle_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.zone_enteringgaragedriveway_all_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.zone_enteringgaragedriveway_person_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garage_bicycle_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garage_car_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garage_all_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garage_person_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.imou_cruiser_fixed_all_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.imou_cruiser_ptz_all_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.imou_cruiser_ptz_person_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.imou_cruiser_fixed_person_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.framsidabesok_all_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.parking2_all_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.uterum_all_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.parking2_person_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.uterum_person_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.framsidabesok_person_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.enteringshedarea_person_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.enteringshedarea_all_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.zone_enteringgaragedriveway_truck_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garage_truck_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garage_motion": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.entre_motion": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.imou_cruiser_ptz_motion": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.uterum_motion": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.imou_cruiser_fixed_motion": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.tradgardpool_motion": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.my_wall_panel_1_usb_plugged": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.my_wall_panel_1_ac_plugged": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.my_wall_panel_1_charging": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.my_wall_panel_1_motion_detected": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.my_wall_panel_motion_detected": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.my_wall_panel_2_usb_plugged": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.my_wall_panel_2_ac_plugged": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.my_wall_panel_2_charging": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.mainentrancemotion_occupancy": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.mainentrancemotion_battery_low": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.maindoor_contact": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garagedoorside_contact": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.patiodoor_contact": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garagebigdoors_contact": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.gameroomofficemotion_occupancy": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.gameroomofficemotion_battery_low": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.zigbee2mqtt_bridge_connection_state": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garagemotion_occupancy": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garagemotion_battery_low": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.presence_sensor_fp2_62d9_presence_sensor_1": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.presence_sensor_fp2_62d9_presence_sensor_2": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.presence_sensor_fp2_62d9_presence_sensor_3": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.garagec500_cell_motion_detection": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.tradgard_pool_cell_motion_detection": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.tradgard_pool_cell_motion_detection_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.jarvislivingroom_assist_in_progress": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.m9livingroom_browser_fullykiosk": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.m9livingroom_browser_dark_mode": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.m9livingroom": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.m9livingroom_browser_charging": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_doors": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_front_left_tire": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_front_left_window": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_battery_charging": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_rear_right_window": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_rear_left_door": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_front_right_window": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_brake_fluid": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_windows": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_rear_left_tire": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_rear_left_window": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_plug_status": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_tailgate": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_door_lock": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_rear_right_door": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_front_right_tire": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_front_left_door": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_hood": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_service": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_bulbs": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_engine": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_washer_fluid": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_rear_right_tire": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.bwd32y_front_right_door": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "binary_sensor.backups_stale": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "cover.livinroomblinds": {
+                    "state": "open",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "cover.fyrtur3": {
+                    "state": "open",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "cover.fyrtur1": {
+                    "state": "open",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "cover.fyrtur2": {
+                    "state": "open",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.shield_3": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.kok_2": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.sovrumsnest_2": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.kitchenplayer_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.garage_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.denon_avc_x4800h_3": {
+                    "state": "idle",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.shield": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.livingroomsurround_2": {
+                    "state": "playing",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.officeplayer_2": {
+                    "state": "paused",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.garagestereo_2": {
+                    "state": "paused",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.samsung_q7_series_65_2": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.tv_samsung_q7_series_65": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.kd_65xd9305_3": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.lg_webos_tv_oled48c25lb": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.oled77": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.denon_avc_x4800h": {
+                    "state": "on",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.denon_avc_x4800h_2": {
+                    "state": "idle",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.shield_remote_android_tv_2": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.ha_voice_assist_livin_media_player": {
+                    "state": "idle",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.ha_voice_assist_office_media_player": {
+                    "state": "idle",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.55cx700_series": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.shield_4": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.sovrumsnest": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.kok": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.samsung_q7_series_65": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.apple_tv": {
+                    "state": "off",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.x4800h": {
+                    "state": "paused",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.livingroomsurround": {
+                    "state": "playing",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.officeplayer": {
+                    "state": "paused",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.garagestereo": {
+                    "state": "paused",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.badrum": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.bedroomplayer": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.badrum_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.sm_s906b": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.ipad": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_samsung_tv_2018": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_web_chrome_windows": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_windows_sc1_f46jjr3": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_lovein_plex_for_android_tv_aftmm": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_bosski_plex_web_chrome_windows": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_teriksson69_plex_for_samsung_tv_2017": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_selma13_plex_for_ios_ipad": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_phyxis_plex_for_apple_tv_apple_tv": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.sm_t225": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.kd_65xd9305": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_android_tv_bravia_4k_2015": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_poow1_plex_for_lg_lg_oled48cx6lb": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_mtoao_plex_for_ios_murats_ipad": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_bosski_plex_for_samsung_tv_2020": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_bosski_plex_for_android_mobile_sm_g998b": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_mtoao_plex_for_ios_iphone": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_android_mobile_os_phone_zeta_sh_09d": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_xbox_xboxone": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_selma13_plex_web_chrome_windows": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_whiterash_plex_cast_chromecast": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.kitchenplayer": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.garage": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_lovein_plex_for_ios_iphone": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_android_mobile_sm_s906b": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_supersonical_plex_for_samsung_tv_2019": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_mtoao_plex_for_ios_ipad": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_web_chrome_windows": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_supersonical_plex_for_ios_ipad": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_supersonical_plex_for_ios_iphone": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_supersonical_plex_web_chrome_osx": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_kgracing70_plex_for_lg_lg_oled77c14lb": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_bosski_plex_for_android_mobile_lenovo_tab_m10_plus_3rd_gen": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_mtoao_plex_for_ios_iphone_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_for_ios_iphone": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_samsung_tv_2018_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_lg_lg_oled77b36la": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_whiterash_plex_for_lg_lg_oled65b36la": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_cast_chromecast": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_android_tv_shield_android_tv": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.shield_android_tv": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.shield_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_web_opera_windows": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plexkodiconnect_kodi_192_168_1_81": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_thestormxp_plex_for_android_tv_ekkorrtvplex": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_thestormxp_plex_for_ios_ipad": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_thestormxp_plex_for_ios_iphone": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_thestormxp_plex_cast_chromecast": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_bosski_plex_web_chrome_windows_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.sm_s928b": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_tobbe_ko_plex_cast_chromecast": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_samsung_tv_2018_3": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_cast_chromecast_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_tobbe_ko_plex_cast_chromecast_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_mtoao_plex_web_microsoft_edge_windows": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_for_android_tv_beyond_tv": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_kgracing70_plex_for_ios_iphone": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_web_opera_windows_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_for_samsung_tv_2018": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_android_mobile_sm_s928b": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_cast_chromecast": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_for_android_tv_bravia_4k_2015": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_cast_chromecast_3": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_micke58_plex_web_chrome_windows": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.kitchenpatio": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_micke58_plex_web_chrome_windows_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_samsung_tv_2018_4": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_samsung_tv_2018_5": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_bosski_plex_for_android_mobile_sm_s928b": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_web_safari_osx": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_web_safari_osx_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_terikss_plex_for_android_mobile_galaxy_note20_ultra_5g": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_terikss_plex_cast_chromecast": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_lovein_plex_for_ios_iphone_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_for_mac_airsomthorerik4": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_terikss_plex_for_android_mobile_galaxy_s21_5g": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_lovein_plex_for_lg_lg_oled55cx3la": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_thestormxp_plex_web_firefox_windows": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_lovein_plex_for_ios_iphone_3": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_denisakris_plex_for_ios_iphone": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_denisakris_plex_cast_chromecast": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_web_safari_osx_3": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_thestormxp_plex_for_ios_iphone_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.m9livingroom": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.tb310fu": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_tobbe_ko_plex_cast_chromecast_3": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_tobbe_ko_plex_cast_chromecast_4": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_ios_ipad": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_samsung_tv_2018_6": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_tobbe_ko_plex_for_ios_iphone": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.sm_g996b": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_web_safari_osx_4": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_for_lg_lg_49sk8500pla": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_android_mobile_galaxy_s21_5g": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_cast_chromecast_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_cast_chromecast_3": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_web_chrome_windows_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_bosski_plex_for_windows_desktop_5855rve": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_lovein_plex_web_microsoft_edge_windows": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_lovein_plex_for_lg_lg_oled55cx3la_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.lg_webos_tv_oled77b36la": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_tobbe_ko_plex_cast_chromecast_5": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_trotting_plex_for_samsung_tv_2022": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.sm_s936b": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_web_chrome_windows_3": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_micke_86_plex_for_android_mobile_galaxy_tab_a_2016": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_web_opera_windows_3": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_thestormxp_plex_for_apple_tv_apple_tv": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_supersonical_plex_for_ios_iphone_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_for_android_mobile_sm_s936b": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_cast_chromecast_4": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_plex_cast_chromecast_5": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_web_chrome_windows_4": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_terikss_plex_for_android_mobile_galaxy_s24": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_terikss_plex_cast_chromecast_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_jp5517_plex_for_ios_iphone_2": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_tom4410_plex_for_apple_tv_apple_tv": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_denisakris_plex_web_microsoft_edge_windows": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_lovein_plex_for_apple_tv_apple_tv": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_trotting_plex_for_ios_iphone": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  },
+                  "media_player.plex_trotting_plex_for_lg_lg_75ut80006la_beufljp": {
+                    "state": "unavailable",
+                    "last_changed": "2025-06-14 02:37:40"
+                  }
+                },
+                "entity_id": [
+                  "input_text.datalogger_last_states"
+                ]
+              },
+              "target": {
+                "entity_id": [
+                  "input_text.datalogger_last_states"
+                ]
+              }
+            },
+            "running_script": false
+          }
+        }
+      ]
+    },
+    "config": {
+      "id": "1749861275771",
+      "alias": "HA-Datalogger2",
+      "description": "Log states every 10 seconds to Supabase for pattern analysis",
+      "triggers": [
+        {
+          "seconds": "/10",
+          "trigger": "time_pattern"
+        }
+      ],
+      "actions": [
+        {
+          "repeat": {
+            "sequence": [
+              {
+                "data": {
+                  "entity_id": "{{ repeat.item.entity_id }}",
+                  "state": "{{ repeat.item.state }}",
+                  "attributes": "{{ repeat.item.attributes }}",
+                  "event_time": "{{ current_timestamp }}",
+                  "last_change": "{{ repeat.item.last_changed | string }}",
+                  "logged_by": "{{ current_user }}"
+                },
+                "action": "rest_command.n8n_generic_logger"
+              }
+            ],
+            "for_each": "{% set result = namespace(entities=[]) %} {% for domain in ['light', 'switch', 'binary_sensor', 'climate', 'cover', 'fan', 'media_player', 'scene', 'automation'] %}\n  {% for entity in states[domain] %}\n    {% set attributes_list = [] %}\n    {% for key, value in entity.attributes.items() %}\n      {% if value is string or value is number or value is boolean %}\n        {% set attributes_list = attributes_list + [{'key': key, 'value': value}] %}\n      {% else %}\n        {% set attributes_list = attributes_list + [{'key': key, 'value': value | string}] %}\n      {% endif %}\n    {% endfor %}\n    {% set entity_data = {\n      'entity_id': entity.entity_id,\n      'state': entity.state,\n      'attributes': attributes_list | map(attribute='value') | list,\n      'last_changed': entity.last_changed | string\n    } %}\n    {% set result.entities = result.entities + [entity_data] %}\n  {% endfor %}\n{% endfor %} {{ result.entities | tojson }}"
+          }
+        },
+        {
+          "target": {
+            "entity_id": "input_text.datalogger_last_states"
+          },
+          "data": {
+            "value": "{\n  {% set ns = namespace(first=true) %}\n  {% for domain in ['light', 'switch', 'binary_sensor', 'climate', 'cover', 'fan', 'media_player'] %}\n    {% for entity in states[domain] %}\n      {% if not ns.first %},{% endif %}\n      {% set ns.first = false %}\n      \"{{ entity.entity_id }}\": {\n        \"state\": \"{{ entity.state }}\",\n        \"last_changed\": \"{{ current_timestamp }}\"\n      }\n    {% endfor %}\n  {% endfor %}\n}"
+          },
+          "action": "input_text.set_value"
+        }
+      ],
+      "mode": "queued",
+      "variables": {
+        "current_timestamp": "2025-06-14 02:37:40",
+        "current_user": "veeriz"
+      }
+    },
+    "blueprint_inputs": null,
+    "context": {
+      "id": "01JXP4V2DK4J4C83TXJ8AB2HC3",
+      "parent_id": null,
+      "user_id": null
+    }
+  },
+  "logbookEntries": [
+    {
+      "name": "HA-Datalogger2",
+      "message": "triggered by time pattern",
+      "source": "time pattern",
+      "entity_id": "automation.ha_datalogger22",
+      "context_id": "01JXP4V2DK4J4C83TXJ8AB2HC3",
+      "domain": "automation",
+      "when": 1749868710.3239412
+    }
+  ]
+}
