@@ -1,0 +1,881 @@
+{
+  "trace": {
+    "last_step": "action/0/repeat/sequence/0",
+    "run_id": "a122f686b82019bfce144dfece2fb5d8",
+    "state": "stopped",
+    "script_execution": "finished",
+    "timestamp": {
+      "start": "2025-06-14T02:28:01.554634+00:00",
+      "finish": "2025-06-14T02:28:07.340260+00:00"
+    },
+    "domain": "automation",
+    "item_id": "1749861275771",
+    "trigger": "event 'automation_triggered'",
+    "trace": {
+      "trigger/1": [
+        {
+          "path": "trigger/1",
+          "timestamp": "2025-06-14T02:28:01.554712+00:00",
+          "changed_variables": {
+            "this": {
+              "entity_id": "automation.ha_datalogger22",
+              "state": "on",
+              "attributes": {
+                "id": "1749861275771",
+                "last_triggered": "2025-06-14T02:28:01.544498+00:00",
+                "mode": "parallel",
+                "current": 8,
+                "max": 10,
+                "friendly_name": "HA-Datalogger2"
+              },
+              "last_changed": "2025-06-14T02:27:48.160697+00:00",
+              "last_reported": "2025-06-14T02:28:01.544511+00:00",
+              "last_updated": "2025-06-14T02:28:01.544511+00:00",
+              "context": {
+                "id": "01JXP47WC8XRP9X7J3K06ZWNAP",
+                "parent_id": "01JXP47WC09NTVDBFH6013Z0G6",
+                "user_id": null
+              }
+            },
+            "trigger": {
+              "id": "1",
+              "idx": "1",
+              "alias": null,
+              "platform": "event",
+              "event": {
+                "event_type": "automation_triggered",
+                "data": {
+                  "name": "HA-Datalogger2",
+                  "entity_id": "automation.ha_datalogger22",
+                  "source": "event 'automation_triggered'"
+                },
+                "origin": "LOCAL",
+                "time_fired": "2025-06-14T02:28:01.544484+00:00",
+                "context": {
+                  "id": "01JXP47WC8XRP9X7J3K06ZWNAP",
+                  "parent_id": "01JXP47WC09NTVDBFH6013Z0G6",
+                  "user_id": null
+                }
+              },
+              "description": "event 'automation_triggered'"
+            },
+            "current_timestamp": "2025-06-14 04:28:01"
+          }
+        }
+      ],
+      "action/0": [
+        {
+          "path": "action/0",
+          "timestamp": "2025-06-14T02:28:01.554838+00:00",
+          "changed_variables": {
+            "context": {
+              "id": "01JXP47WCJTTFF4M78TEPD6CG9",
+              "parent_id": "01JXP47WC8XRP9X7J3K06ZWNAP",
+              "user_id": null
+            }
+          }
+        }
+      ],
+      "action/0/repeat/sequence/0": [
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.100094+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 340,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_jp5517_plex_web_chrome_windows",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_jp5517_plex_web_chrome_windows",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.109729+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 341,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_supersonical_plex_for_ios_ipad",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_supersonical_plex_for_ios_ipad",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.126191+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 342,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_supersonical_plex_for_ios_iphone",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_supersonical_plex_for_ios_iphone",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.135591+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 343,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_supersonical_plex_web_chrome_osx",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_supersonical_plex_web_chrome_osx",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.145610+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 344,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_kgracing70_plex_for_lg_lg_oled77c14lb",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_kgracing70_plex_for_lg_lg_oled77c14lb",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.155489+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 345,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_bosski_plex_for_android_mobile_lenovo_tab_m10_plus_3rd_gen",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_bosski_plex_for_android_mobile_lenovo_tab_m10_plus_3rd_gen",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.164203+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 346,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_mtoao_plex_for_ios_iphone_2",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_mtoao_plex_for_ios_iphone_2",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.177430+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 347,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_jp5517_plex_for_ios_iphone",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_jp5517_plex_for_ios_iphone",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.188284+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 348,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_plex_for_samsung_tv_2018_2",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_plex_for_samsung_tv_2018_2",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.197892+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 349,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_plex_for_lg_lg_oled77b36la",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_plex_for_lg_lg_oled77b36la",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.206730+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 350,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_whiterash_plex_for_lg_lg_oled65b36la",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_whiterash_plex_for_lg_lg_oled65b36la",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.216531+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 351,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_jp5517_plex_cast_chromecast",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_jp5517_plex_cast_chromecast",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.226907+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 352,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_plex_for_android_tv_shield_android_tv",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_plex_for_android_tv_shield_android_tv",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.249944+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 353,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.shield_android_tv",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.shield_android_tv",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.260661+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 354,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.shield_2",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.shield_2",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.272208+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 355,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_jp5517_plex_web_opera_windows",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_jp5517_plex_web_opera_windows",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.287008+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 356,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_plexkodiconnect_kodi_192_168_1_81",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_plexkodiconnect_kodi_192_168_1_81",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.301905+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 357,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_thestormxp_plex_for_android_tv_ekkorrtvplex",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_thestormxp_plex_for_android_tv_ekkorrtvplex",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.319364+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 358,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_thestormxp_plex_for_ios_ipad",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_thestormxp_plex_for_ios_ipad",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        },
+        {
+          "path": "action/0/repeat/sequence/0",
+          "timestamp": "2025-06-14T02:28:07.332564+00:00",
+          "changed_variables": {
+            "repeat": {
+              "first": false,
+              "index": 359,
+              "last": false,
+              "item": {
+                "attributes": [],
+                "entity_id": "media_player.plex_thestormxp_plex_for_ios_iphone",
+                "last_changed": "2025-06-14 04:28:01",
+                "state": "unavailable"
+              }
+            }
+          },
+          "result": {
+            "params": {
+              "domain": "rest_command",
+              "service": "n8n_generic_logger",
+              "service_data": {
+                "entity_id": "media_player.plex_thestormxp_plex_for_ios_iphone",
+                "state": "unavailable",
+                "attributes": [],
+                "event_time": "2025-06-14 04:28:01",
+                "last_change": "2025-06-14 04:28:01",
+                "logged_by": "veeriz",
+                "event_type": "state_change"
+              },
+              "target": {}
+            },
+            "running_script": false
+          }
+        }
+      ]
+    },
+    "config": {
+      "id": "1749861275771",
+      "alias": "HA-Datalogger2",
+      "description": "Log states every 10 seconds to Supabase for pattern analysis with scene/automation tracking",
+      "triggers": [
+        {
+          "seconds": "/10",
+          "trigger": "time_pattern"
+        },
+        {
+          "event_type": "automation_triggered",
+          "trigger": "event"
+        },
+        {
+          "event_type": "scene_activated",
+          "trigger": "event"
+        }
+      ],
+      "actions": [
+        {
+          "repeat": {
+            "sequence": [
+              {
+                "data": {
+                  "entity_id": "{{ repeat.item.entity_id }}",
+                  "state": "{{ repeat.item.state }}",
+                  "attributes": "{{ repeat.item.attributes }}",
+                  "event_time": "{{ current_timestamp }}",
+                  "last_change": "{% if states(repeat.item.entity_id) != states('input_text.datalogger_last_states_' + repeat.item.entity_id.split('.')[1]) %}\n  {{ current_timestamp }}\n{% else %}\n  {{ states('input_text.datalogger_last_states_time_' + repeat.item.entity_id.split('.')[1]) or current_timestamp }}\n{% endif %}",
+                  "logged_by": "veeriz",
+                  "event_type": "state_change"
+                },
+                "action": "rest_command.n8n_generic_logger"
+              }
+            ],
+            "for_each": "{% set result = namespace(entities=[]) %} {% for domain in ['light', 'switch', 'binary_sensor', 'climate', 'cover', 'fan', 'media_player', 'scene', 'automation'] %}\n  {% for entity in states[domain] %}\n    {% set attributes_list = [] %}\n    {% for key, value in entity.attributes.items() %}\n      {% if value is string or value is number or value is boolean %}\n        {% set attributes_list = attributes_list + [{'key': key, 'value': value}] %}\n      {% else %}\n        {% set attributes_list = attributes_list + [{'key': key, 'value': value | string}] %}\n      {% endif %}\n    {% endfor %}\n    {% set entity_data = {\n      'entity_id': entity.entity_id,\n      'state': entity.state,\n      'attributes': attributes_list | map(attribute='value') | list,\n      'last_changed': current_timestamp\n    } %}\n    {% set result.entities = result.entities + [entity_data] %}\n  {% endfor %}\n{% endfor %} {{ result.entities | tojson }}"
+          }
+        },
+        {
+          "repeat": {
+            "sequence": [
+              {
+                "target": {
+                  "entity_id": "input_text.datalogger_last_states_{{ repeat.item.entity_id.split('.')[1] }}"
+                },
+                "data": {
+                  "value": "{{ repeat.item.state }}"
+                },
+                "action": "input_text.set_value"
+              },
+              {
+                "target": {
+                  "entity_id": "input_text.datalogger_last_states_time_{{ repeat.item.entity_id.split('.')[1] }}"
+                },
+                "data": {
+                  "value": "{{ current_timestamp }}"
+                },
+                "action": "input_text.set_value"
+              }
+            ],
+            "for_each": "{% set result = namespace(entities=[]) %} {% for domain in ['light', 'switch', 'binary_sensor', 'climate', 'cover', 'fan', 'media_player'] %}\n  {% for entity in states[domain] %}\n    {% set result.entities = result.entities + [{'entity_id': entity.entity_id}] %}\n  {% endfor %}\n{% endfor %} {{ result.entities | tojson }}"
+          }
+        },
+        {
+          "if": "{{ trigger.event is defined and trigger.event.event_type == 'automation_triggered' }}",
+          "then": [
+            {
+              "data": {
+                "entity_id": "{{ trigger.event.data.entity_id }}",
+                "state": "triggered",
+                "event_time": "{{ current_timestamp }}",
+                "attributes": "{{ trigger.event.data }}",
+                "logged_by": "veeriz",
+                "event_type": "automation_triggered"
+              },
+              "action": "rest_command.n8n_generic_logger"
+            }
+          ]
+        },
+        {
+          "if": "{{ trigger.event is defined and trigger.event.event_type == 'scene_activated' }}",
+          "then": [
+            {
+              "data": {
+                "entity_id": "{{ trigger.event.data.entity_id }}",
+                "state": "activated",
+                "event_time": "{{ current_timestamp }}",
+                "attributes": "{{ trigger.event.data }}",
+                "logged_by": "veeriz",
+                "event_type": "scene_activated"
+              },
+              "action": "rest_command.n8n_generic_logger"
+            }
+          ]
+        }
+      ],
+      "mode": "parallel",
+      "variables": {
+        "current_timestamp": "{{ now().strftime('%Y-%m-%d %H:%M:%S') }}"
+      }
+    },
+    "blueprint_inputs": null,
+    "context": {
+      "id": "01JXP47WCJTTFF4M78TEPD6CG9",
+      "parent_id": "01JXP47WC8XRP9X7J3K06ZWNAP",
+      "user_id": null
+    }
+  },
+  "logbookEntries": [
+    {
+      "name": "HA-Datalogger2",
+      "message": "triggered by event 'automation_triggered'",
+      "source": "event 'automation_triggered'",
+      "entity_id": "automation.ha_datalogger22",
+      "context_id": "01JXP47WCJTTFF4M78TEPD6CG9",
+      "domain": "automation",
+      "when": 1749868081.554735
+    }
+  ]
+}
