@@ -1,0 +1,164 @@
+{
+  "trace": {
+    "last_step": "action/2",
+    "run_id": "48e9a3f77fa593523a12321e169ae2d3",
+    "state": "stopped",
+    "script_execution": "finished",
+    "timestamp": {
+      "start": "2025-06-14T01:55:10.055577+00:00",
+      "finish": "2025-06-14T01:55:10.065759+00:00"
+    },
+    "domain": "automation",
+    "item_id": "1749861275771",
+    "trigger": "time pattern",
+    "trace": {
+      "trigger/0": [
+        {
+          "path": "trigger/0",
+          "timestamp": "2025-06-14T01:55:10.055622+00:00",
+          "changed_variables": {
+            "this": {
+              "entity_id": "automation.ha_datalogger22",
+              "state": "on",
+              "attributes": {
+                "id": "1749861275771",
+                "last_triggered": "2025-06-14T01:53:00.423318+00:00",
+                "mode": "single",
+                "current": 0,
+                "friendly_name": "HA-Datalogger2"
+              },
+              "last_changed": "2025-06-14T01:55:05.838431+00:00",
+              "last_reported": "2025-06-14T01:55:05.838431+00:00",
+              "last_updated": "2025-06-14T01:55:05.838431+00:00",
+              "context": {
+                "id": "01JXP2BJZDVJY7D2SY3E02M8RP",
+                "parent_id": null,
+                "user_id": "77c886880c3241139868a6b754d5aaad"
+              }
+            },
+            "trigger": {
+              "id": "0",
+              "idx": "0",
+              "alias": null,
+              "platform": "time_pattern",
+              "now": "2025-06-14T03:55:10.055418+02:00",
+              "description": "time pattern"
+            }
+          }
+        }
+      ],
+      "action/0": [
+        {
+          "path": "action/0",
+          "timestamp": "2025-06-14T01:55:10.055929+00:00",
+          "changed_variables": {
+            "context": {
+              "id": "01JXP2BQ37KFEND8D1H3F4S4GK",
+              "parent_id": null,
+              "user_id": null
+            },
+            "start_time": 1749866110.056055,
+            "current_timestamp": "2025-06-14 03:55:10",
+            "last_states": {}
+          }
+        }
+      ],
+      "action/1": [
+        {
+          "path": "action/1",
+          "timestamp": "2025-06-14T01:55:10.056310+00:00"
+        }
+      ],
+      "action/2": [
+        {
+          "path": "action/2",
+          "timestamp": "2025-06-14T01:55:10.061986+00:00",
+          "result": {
+            "params": {
+              "domain": "input_text",
+              "service": "set_value",
+              "service_data": {
+                "value": {},
+                "entity_id": [
+                  "input_text.datalogger_last_states"
+                ]
+              },
+              "target": {
+                "entity_id": [
+                  "input_text.datalogger_last_states"
+                ]
+              }
+            },
+            "running_script": false
+          }
+        }
+      ]
+    },
+    "config": {
+      "id": "1749861275771",
+      "alias": "HA-Datalogger2",
+      "description": "Log states every 10 seconds to Supabase for pattern analysis with state validation and performance monitoring",
+      "triggers": [
+        {
+          "seconds": "/10",
+          "trigger": "time_pattern"
+        }
+      ],
+      "conditions": [],
+      "actions": [
+        {
+          "variables": {
+            "start_time": "{{ now().timestamp() }}",
+            "current_timestamp": "{{ now().strftime(\"%Y-%m-%d %H:%M:%S\") }}",
+            "last_states": "{% if states('input_text.datalogger_last_states') %}\n  {{ states('input_text.datalogger_last_states') | from_json }}\n{% else %}\n  {{ {} }}\n{% endif %}"
+          }
+        },
+        {
+          "repeat": {
+            "sequence": [
+              {
+                "data": {
+                  "entity_id": "{{ repeat.item.entity_id }}",
+                  "state": "{{ repeat.item.state }}",
+                  "attributes": "{{ repeat.item.attributes }}",
+                  "event_time": "{{ current_timestamp }}",
+                  "last_change": "{{ repeat.item.last_changed }}",
+                  "logged_by": "veeriz"
+                },
+                "action": "rest_command.n8n_generic_logger"
+              }
+            ],
+            "for_each": "{% set result = namespace(entities=[]) %} {% for domain in ['light', 'switch', 'binary_sensor', 'climate', 'cover', 'fan', 'media_player'] %}\n  {% for entity in states[domain] %}\n    {% if entity.state not in ['unavailable', 'unknown', None, ''] %}\n      {% set attrs = dict() %}\n      {% set has_valid_attrs = false %}\n      {% for key, value in entity.attributes.items() %}\n        {% if value is not none and value != '' %}\n          {% if value is string or value is number or value is boolean %}\n            {% set attrs = dict(attrs, **{key: value}) %}\n            {% set has_valid_attrs = true %}\n          {% else %}\n            {% set attrs = dict(attrs, **{key: value | string}) %}\n            {% set has_valid_attrs = true %}\n          {% endif %}\n        {% endif %}\n      {% endfor %}\n      {% if has_valid_attrs %}\n        {% set entity_data = {\n          'entity_id': entity.entity_id,\n          'state': entity.state,\n          'attributes': attrs,\n          'last_changed': entity.last_changed.strftime('%Y-%m-%d %H:%M:%S')\n        } %}\n        {% set result.entities = result.entities + [entity_data] %}\n      {% endif %}\n    {% endif %}\n  {% endfor %}\n{% endfor %} {{ result.entities | tojson }}"
+          }
+        },
+        {
+          "target": {
+            "entity_id": "input_text.datalogger_last_states"
+          },
+          "data": {
+            "value": "{% set states_dict = {} %} {% for domain in ['light', 'switch', 'binary_sensor', 'climate', 'cover', 'fan', 'media_player'] %}\n  {% for entity in states[domain] %}\n    {% if entity.state not in ['unavailable', 'unknown', None, ''] %}\n      {% set states_dict = states_dict | combine({\n        entity.entity_id: {\n          'state': entity.state,\n          'last_changed': entity.last_changed.strftime('%Y-%m-%d %H:%M:%S')\n        }\n      }) %}\n    {% endif %}\n  {% endfor %}\n{% endfor %} {{ states_dict | tojson }}"
+          },
+          "action": "input_text.set_value"
+        }
+      ],
+      "mode": "single"
+    },
+    "blueprint_inputs": null,
+    "context": {
+      "id": "01JXP2BQ37KFEND8D1H3F4S4GK",
+      "parent_id": null,
+      "user_id": null
+    }
+  },
+  "logbookEntries": [
+    {
+      "name": "HA-Datalogger2",
+      "message": "triggered by time pattern",
+      "source": "time pattern",
+      "entity_id": "automation.ha_datalogger22",
+      "context_id": "01JXP2BQ37KFEND8D1H3F4S4GK",
+      "domain": "automation",
+      "when": 1749866110.0556848
+    }
+  ]
+}
